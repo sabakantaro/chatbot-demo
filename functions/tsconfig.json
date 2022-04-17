@@ -10,7 +10,5 @@
     "skipLibCheck": true
   },
   "compileOnSave": true,
-  "include": [
-    "src"
-, "../src/dataset.js"  ]
+  "include": ["src", "./../src/dataset.js"]
 }

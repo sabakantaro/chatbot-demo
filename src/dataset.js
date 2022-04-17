@@ -1,38 +1,42 @@
 const defaultDataset = {
   init: {
     answers: [
-      { content: "仕事を依頼したい", nextId: "job_offer" },
+      { content: "パーソナルトレーニングを依頼したい", nextId: "job_offer" },
       {
-        content: "エンジニアのキャリアについて相談したい",
+        content: "笑いのキャリアについて相談したい",
         nextId: "consultant",
       },
       { content: "学習コミュニティについて知りたい", nextId: "community" },
-      { content: "お付き合いしたい", nextId: "dating" },
+      { content: "結婚したい", nextId: "dating" },
     ],
     question: "こんにちは！💪きんにくんへのご用件はなんでしょうか？",
   },
   job_offer: {
     answers: [
-      { content: "Webサイトを制作してほしい", nextId: "website" },
-      { content: "Webアプリを開発してほしい", nextId: "webapp" },
-      { content: "自動化ツールを作ってほしい", nextId: "automation_tool" },
+      { content: "暑い胸板を制作してほしい", nextId: "website" },
+      { content: "筋トレアプリを開発してほしい", nextId: "webapp" },
+      {
+        content: "筋トレ自動化ツールを作ってほしい",
+        nextId: "automation_tool",
+      },
       { content: "その他", nextId: "other_jobs" },
     ],
-    question: "どのようなお仕事でしょうか？",
+    question: "どのようなメニューでしょうか？",
   },
   website: {
     answers: [
       { content: "問い合わせる", nextId: "contact" },
       { content: "最初の質問に戻る", nextId: "init" },
     ],
-    question: "Webサイト細作についてですね。コチラからお問い合わせできます。",
+    question: "暑い胸板ですね。コチラからお問い合わせできます。",
   },
   webapp: {
     answers: [
       { content: "問い合わせる", nextId: "contact" },
       { content: "最初の質問に戻る", nextId: "init" },
     ],
-    question: "Webアプリ開発についてですね。コチラからお問い合わせできます。",
+    question:
+      "筋トレアプリ開発についてですね。コチラからお問い合わせできます。",
   },
   automation_tool: {
     answers: [
@@ -40,7 +44,7 @@ const defaultDataset = {
       { content: "最初の質問に戻る", nextId: "init" },
     ],
     question:
-      "自動化ツール開発についてですね。コチラからお問い合わせできます。",
+      "筋トレ自動化ツール開発についてですね。コチラからお問い合わせできます。",
   },
   other_jobs: {
     answers: [
@@ -53,46 +57,49 @@ const defaultDataset = {
     answers: [
       {
         content: "YouTubeで動画を見る",
-        nextId: "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w",
+        nextId: "https://www.youtube.com/channel/UCOUu8YlbaPz0W2TyFTZHvjA",
       },
       { content: "学習コミュニティについて知りたい", nextId: "community" },
       { content: "最初の質問に戻る", nextId: "init" },
     ],
-    question: "きんにくん",
+    question: "ようこそ、きんにくTVへ！パワー！",
   },
   community: {
     answers: [
       { content: "どんな活動をしているの？", nextId: "community_activity" },
       {
         content: "コミュニティに参加したい",
-        nextId: "https://torahack.web.app/community/",
+        nextId: "https://www.instagram.com/nakayama_kinnikun/?hl=ja",
       },
       { content: "最初の質問に戻る", nextId: "init" },
     ],
-    question:
-      "2020年3月から学習コミュニティを始めました！🎉Webエンジニアへの転職を目指す人向けに、プログラミングを教えたりキャリアの相談に乗っています。",
+    question: "ボディビル本業、お笑い副業でやっております。",
   },
   community_activity: {
     answers: [
       {
         content: "さらに詳細を知りたい",
-        nextId: "https://youtu.be/tIzE7hUDbBM",
+        nextId: "https://www.instagram.com/nakayama_kinnikun/?hl=ja",
       },
       {
         content: "コミュニティに参加したい",
-        nextId: "https://torahack.web.app/community/",
+        nextId: "https://www.instagram.com/nakayama_kinnikun/?hl=ja",
       },
       { content: "最初の質問に戻る", nextId: "init" },
     ],
     question:
-      "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。",
+      "筋トレ初心者から上級者まで役立つ筋トレ情報、そして笑いを届けております！\n詳細はYouTube動画で紹介しています。",
   },
   dating: {
     answers: [
-      { content: "DMする", nextId: "https://twitter.com/torahack_" },
+      {
+        content: "DMする",
+        nextId: "https://www.instagram.com/nakayama_kinnikun/?hl=ja",
+      },
       { content: "最初の質問に戻る", nextId: "init" },
     ],
-    question: "まずは一緒にランチでもいかがですか？DMしてください😘",
+    question:
+      "結婚許すのか許さないのか、どっちなーんだい！？許ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーす！パワー！",
   },
 };
 
